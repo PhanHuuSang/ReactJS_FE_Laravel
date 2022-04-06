@@ -1,0 +1,681 @@
+.mainUser {
+  margin-top: 125px;
+  background-color: #f0f2f5;
+  padding-bottom: 2rem;
+  .mainOrder {
+    padding:  0px !important;
+    margin-top: 0px !important;
+    
+  }
+  .sectionNavUser {
+    padding: 1rem 0px;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        padding: 0px 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        a {
+          outline: none;
+          opacity: 0.5;
+          color: #112950;
+          text-decoration: none;
+        }
+        &:nth-child(2) {
+          a {
+            opacity: 1;
+            font-weight: 500;
+          }
+          &::before {
+            position: absolute;
+            content: ">";
+            font-size: 12px;
+            left: 0px;
+          }
+        }
+      }
+    }
+  }
+  .sectionLeft__User {
+    .userContent {
+      padding: 15px;
+      color: #fff;
+      background: #0f62f9;
+      border-radius: 12px 12px 0 0;
+      margin: 0 auto;
+      .avatarUser {
+        width: 68px;
+        height: 68px;
+        text-align: center;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .nameUser {
+        text-align: center;
+        span {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+        }
+      }
+    }
+    .UserMenu {
+      background-color: #fff;
+      padding-bottom: 100px;
+      border-radius: 0 0 12px 12px;
+      ul {
+        .activeUserMenu {
+          background-color: #f2f6fe;
+          span {
+            svg {
+              stroke: #0f62f9 !important;
+            }
+          }
+          .nameList {
+            color: #0f62f9 !important;
+          }
+        }
+        li {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: 64px;
+          padding: 0px 15px;
+          cursor: pointer;
+          &:nth-last-of-type(4),
+          &:last-child {
+            border-bottom: 16px solid #ededed;
+          }
+          &:hover {
+            background-color: #f2f6fe;
+            span {
+              svg {
+                stroke: #0f62f9;
+              }
+            }
+            .nameList {
+              color: #0f62f9;
+            }
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            background-color: #f2f4f5;
+            left: 1.5rem;
+            right: 1.5rem;
+            height: 1px;
+            bottom: 0;
+          }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            height: 64px;
+            padding: 0px 15px;
+            flex: 1 0 auto;
+            color: black;
+            text-decoration: none;
+            span {
+              width: 24px;
+              height: 24px;
+              margin-right: 8px;
+            }
+            .nameList {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              margin-right: auto;
+            }
+          }
+          span {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+          }
+          .nameList {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-right: auto;
+          }
+        }
+      }
+      .contactAdmin {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #f2f4f5;
+        a {
+          outline: none;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            margin-right: 5px;
+          }
+          b {
+            font-weight: bolder;
+            margin-right: 10px;
+          }
+          span {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+            color: #5e6f88;
+          }
+        }
+      }
+    }
+    .outAccount {
+      margin-top: 20px;
+      text-align: center;
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #8e9aab;
+        background: none;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+  .sectionUser__Right {
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    height: 100%;
+    .nameSection__User {
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 0;
+      }
+    }
+    .contentUser__Left {
+      text-align: center;
+      margin-top: 10px;
+      .imageSection__User {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        text-decoration: underline;
+        color: #0f62f9;
+      }
+    }
+    .formUser__Left {
+        .formName {
+          .inputFile {
+            label {
+              font-size: 0.75rem;
+              line-height: 18px;
+              span {
+                margin-left: 3px;
+                color: #f33060;
+              }
+            }
+            input {
+              outline: none;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              background-color: transparent;
+              padding: 9px 0;
+              border: none;
+              border-top: 1px solid transparent;
+              border-bottom: 1px solid #e5e5e5;
+              font-size: 0.938rem;
+              line-height: 18px;
+              width: 100%;
+              border-radius: 0;
+            }
+          }
+        }
+        .formGender {
+          margin-top: 1rem;
+          label {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+          }
+          .d-flex {
+            margin-top: 10px;
+            .radioFile {
+              margin-right: 60px;
+              .activeRadio {
+                span {
+                  background-color: #0f62f9 !important;
+                }
+              }
+              .checkRadioFull {
+                margin: 0;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                display: -moz-box;
+                display: flex;
+                -moz-box-orient: horizontal;
+                -moz-box-direction: normal;
+                flex-direction: row;
+                -moz-box-align: start;
+                align-items: flex-start;
+                span {
+                  height: 20px;
+                  width: 20px;
+                  background-color: #eee;
+                  border-radius: 50%;
+                  position: relative;
+                  margin-right: 16px;
+                  flex-shrink: 0;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #fff;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                  }
+                }
+                input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .formSDT,
+        .formEmail {
+          margin-top: 1rem;
+          .inputFile {
+            label {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 18px;
+              display: inline-block;
+            }
+            input {
+              outline: none;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              background-color: transparent;
+              padding: 9px 0;
+              border: none;
+              border-top: 1px solid transparent;
+              border-bottom: 1px solid #e5e5e5;
+              font-size: 0.938rem;
+              line-height: 18px;
+              width: 100%;
+              border-radius: 0;
+            }
+          }
+        }
+        .buttonChange {
+          margin-top: 1rem;
+          outline: none;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.063rem;
+          font-weight: 700;
+          color: #0f62f9;
+          cursor: pointer;
+        }
+        button {
+          margin: 20px 0 40px !important;
+          background-color: #0065ff !important;
+          border-radius: 12px;
+          width: 100%;
+          line-height: 54px !important;
+          height: 54px;
+          outline: none;
+          border: none;
+          color: #fff;
+          text-align: center;
+          font-size: 17px;
+          font-weight: 700;
+          font-family: inherit !important;
+          display: -moz-box;
+          display: flex;
+          -moz-box-pack: center;
+          justify-content: center;
+          align-content: center;
+        }
+
+    }
+  }
+  .sectionChangePassword {
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    height: 100%;
+    .nameSection__User {
+      display: flex;
+      align-items: center;
+      svg {
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 0;
+      }
+    }
+    .formChangePassword {
+      padding-left: 30px;
+      .inputFile {
+        margin-top: 1rem;
+        label {
+          font-size: 0.75rem;
+          line-height: 18px;
+          span {
+            margin-left: 3px;
+            color: #f33060;
+          }
+        }
+        .inputChild {
+          position: relative;
+          span {
+            position: absolute;
+            top: 9px;
+            left: 4px;
+            width: 20px;
+          }
+
+          input {
+            outline: none;
+            padding: 9px 28px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: none;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 0.938rem;
+            line-height: 18px;
+            width: 100%;
+            border-radius: 0;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        border-radius: 12px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-top: 40px;
+        background-color: #0f62f9;
+        color: #fff;
+        border-color: #b2bac6;
+        opacity: 1;
+        outline: none;
+        border: none;
+        align-items: center;
+      }
+    }
+  }
+  .sectionUserOrder {
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    height: 100%;
+    .nameSection__User {
+      display: flex;
+      align-items: center;
+      svg {
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 0;
+      }
+    }
+    .listUser__Order {
+      margin-top: 25px;
+      .listUser__Order__Tab {
+        display: flex;
+        border-bottom: 1px solid #f2f4f5;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        .listUser__Order__Tab__Children {
+          position: relative;
+          .buttonChilren {
+            margin: 0;
+            padding: 5px 10px;
+            white-space: nowrap;
+            color: #b2bac6;
+            font-size: 1.063rem;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            &:first-child {
+              margin-left: 24px;
+            }
+          }
+          .activeButton {
+            color: #0f62f9;
+            border-bottom: 3px solid #0f62f9;
+          }
+        }
+      }
+        .listUser__Order_Search {
+          position: relative;
+          display: flex;
+          -moz-box-align: center;
+          align-items: center;
+          width: 100%;
+          border: 1px solid #e5e5e5;
+          padding: 0 16px;
+          height: 54px;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 0.75rem;
+          margin-top: 20px;
+          input {
+            flex-grow: 1;
+            border: 0;
+            margin-left: 5px;
+            outline: none;
+            &::placeholder {
+              color: #b2bac6;
+            }
+          }
+        }
+      }
+      .listUser__Order__Content {
+        margin-top: 20px;
+        .result__Content {
+          margin-top: 40px;
+          position: relative;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow:0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);border:1px;
+          h2 {
+            margin: 0 16px;
+    padding: 5px 10px;
+    border: 1px solid #0f62f9;
+    border-radius: 0.75rem;
+    background-color: #f2f6fe;
+    font-size: 1rem;
+    color: #112950;
+    /* font-weight: 600; */
+    position: absolute;
+    content: "";
+    top: -10px;
+          }
+          .item__order {
+            padding: 20px;
+            border-bottom: 1px solid #e5e5e5;
+            p {
+              margin: 10px 0px;
+              color: #8e9aab;
+              span {
+                color: black;
+                font-weight: bolder;
+              }
+            }
+          }
+          .deital__item {
+            padding: 20px;
+            display: flex;
+            color: #0f62f9;
+            font-size: 14px;
+            justify-content: end;
+            p {
+              cursor: pointer;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+
+@media screen and (max-width: 480px) {
+  .mainUser {
+    margin-top: 170px;
+    .sectionLeft__User {
+      .UserMenu {
+        padding-bottom: 20px;
+      }
+    }
+    .sectionUser__Right {
+      margin-top: 20px;
+      .formUser__Left {
+        margin-top: 20px;
+      }
+    }
+    .sectionUserOrder,
+    .sectionChangePassword {
+      margin-top: 20px;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainUser {
+    .sectionLeft__User {
+      .UserMenu {
+        padding-bottom: 20px;
+      }
+    }
+    .sectionUser__Right {
+      margin-top: 20px;
+      .formUser__Left {
+        margin-top: 20px;
+      }
+    }
+    .sectionUserOrder,
+    .sectionChangePassword {
+      margin-top: 20px;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainUser {
+    margin-top: 80px;
+    .col-md-4 {
+      width: 100%;
+    }
+    .col-md-8 {
+      width: 100%;
+    }
+    .sectionLeft__User {
+      .UserMenu {
+        padding-bottom: 20px;
+      }
+    }
+    .sectionUser__Right {
+      margin-top: 20px;
+      .formUser__Left {
+        margin-top: 20px;
+      }
+    }
+    .sectionUserOrder,
+    .sectionChangePassword {
+      margin-top: 20px;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .mainUser {
+    margin-top: 100px;
+    .col-md-4 {
+      width: 35%;
+    }
+    .col-md-8 {
+      width: 65%;
+    }
+    .sectionLeft__User {
+      .UserMenu {
+        padding-bottom: 100px;
+      }
+    }
+    .sectionUserOrder,
+    .sectionChangePassword {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    .sectionUser__Right {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1259px) {
+  .mainUser {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,28 @@
+.dropdown-language {
+  .row {
+    align-items: center;
+  }
+  cursor: pointer;
+  position: absolute;
+  border-radius: 12px;
+  z-index: 1;
+  width: 150px;
+  right: 275px;
+  background-color: #fff;
+  top: 30px;
+  border: 1px solid #0f62f9;
+  box-shadow: 0 0 16px rgb(0 0 0 / 20%);
+  padding: 5px 0px;
+  p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    &:nth-child(2) {
+      color: #b2bac6 !important;
+    }
+  }
+}
+// @media (min-width: 1200px) and (max-width: 1400px) {
+//   .dropdown-language {
+//     right: 135px !important;
+//   }
+// }

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+.Admin {
+  font-family: "Mulish", sans-serif;
+  background-image: url(../images/banner.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9999;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.33;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .Modal__Admin {
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #5e5e5e;
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      z-index: 2;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+    .row {
+      position: relative;
+      z-index: 3;
+    }
+    .Modal__Admin__Login {
+      .name__Login__Modal {
+        text-align: center;
+        h1 {
+          font-size: 25px;
+          font-weight: bolder;
+          color: #fff;
+        }
+      }
+      .form__Login__Modal {
+        margin-top: 25px;
+        .formChildren {
+          display: flex;
+          flex-direction: column;
+          margin: 20px 0px;
+          label {
+            font-size: 20px;
+            color: #fff;
+          }
+          input {
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            padding: 10px 0px;
+            background-color: transparent;
+            &::placeholder {
+              color: #fff;
+            }
+          }
+        }
+        button {
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none;
+          border-radius: 10px;
+          padding: 15px;
+          color: #000;
+          border: none;
+          overflow: hidden;
+          position: relative;
+          text-decoration: none;
+          transition: all 0.3s;
+          &:hover {
+            color: #5e5e5e;
+            &::after {
+              background-color: #5e5e5e;
+            }
+            &::after {
+              background-color: #5e5e5e;
+            }
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            filter: blur(8px);
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            transition: all 0.3s;
+            height: 100%;
+            opacity: 0.3;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            transition: all 0.3s;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

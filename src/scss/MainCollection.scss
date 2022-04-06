@@ -1,0 +1,190 @@
+.mainCollection {
+  margin-top: 125px;
+  .listMainCollection {
+    background-color: #f0f2f5;
+    padding: 1rem;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        padding: 0px 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        a {
+          outline: none;
+          opacity: 0.5;
+          color: #112950;
+          text-decoration: none;
+        }
+        &:nth-child(2) {
+          a {
+            opacity: 1;
+          }
+          &::before {
+            position: absolute;
+            content: ">";
+            font-size: 12px;
+            left: 0px;
+          }
+        }
+      }
+    }
+  }
+  .nameMainCollection {
+    padding: 2rem 0px;
+    background-color: #f2f6fe;
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #112950;
+    }
+  }
+  .mainContent__Collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 40px 115px 20px;
+    .ItemCategory {
+      padding: 12px;
+      background: #fff;
+      box-shadow: 0 0 12px rgb(15 61 145 / 12%);
+      border-radius: 12px;
+      height: calc(100% - 10px);
+      border: 2px solid transparent;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      &:hover {
+        border: 2px solid #5dac46;
+      }
+      a {
+        outline: none;
+        text-decoration: none;
+      }
+      .discountPos {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        p {
+          font-size: 0.938rem;
+          color: #fff;
+          background: #f33060;
+          padding: 8px 15px;
+          border-radius: 30px;
+          font-weight: 400;
+        }
+      }
+      .imageItemCategory {
+        padding: 1rem 0px;
+        img {
+          width: 100%;
+          margin: auto;
+        }
+      }
+      .nameItemCategory {
+        margin: 5px 0px;
+        h1 {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 24px;
+          white-space: wrap;
+          color: #112950;
+          height: 50px;
+          display: -webkit-box;
+          width: 100%;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-word;
+        }
+      }
+      .priceItemCategory {
+        margin: 5px 0px;
+        .discount {
+          height: 22px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 22px;
+          color: #b2bac6;
+        }
+        p {
+          font-weight: bolder;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 24px;
+          color: #0f62f9;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+      .cartItemCategory {
+        margin: 5px 0px;
+        button {
+          width: 100%;
+          border: none;
+          border-radius: 12px;
+          font-style: normal;
+          font-size: 1rem;
+          line-height: 24px;
+          background: #5dac46;
+          color: #fff;
+          cursor: pointer;
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainCollection {
+    margin-top: 170px;
+    .mainContent__Collection {
+      grid-template-columns: 1fr 1fr;
+      margin: 40px 10px 3rem;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainCollection {
+    .mainContent__Collection {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 40px 10px 3rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainCollection {
+    margin-top: 75px;
+    .mainContent__Collection {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 40px 10px 3rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .mainCollection {
+    margin-top: 100px;
+    .mainContent__Collection {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 40px 10px 3rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1259px) {
+  .mainCollection {
+    margin-top: 100px;
+    .mainContent__Collection {
+      margin: 40px 10px 3rem;
+    }
+  }
+}

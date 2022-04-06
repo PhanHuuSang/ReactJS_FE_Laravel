@@ -1,0 +1,1 @@
+export * from './MainProduct/components/SectionContentProduct/components/ContentList'

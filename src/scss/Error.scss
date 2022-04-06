@@ -1,0 +1,9 @@
+.error {
+  position: fixed;
+  z-index: 100;
+  background-image: url(../images/error.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  inset: 0;
+}
